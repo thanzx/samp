@@ -1,0 +1,22 @@
+{
+    "version": "2.0.0", 
+    "tasks": [
+        {
+            "label": "PAWN COMPILER",
+            "type": "shell",
+            "args": [
+            //    "${relativeFile}",
+                "${workspaceRoot}\\gamemodes\\Youtube.pwn",
+                "-o${workspaceRoot}\\gamemodes\\Youtube.amx"
+            ],
+            "windows": {
+                "command": "${workspaceRoot}\\pawno\\pawncc.exe"
+            },
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
